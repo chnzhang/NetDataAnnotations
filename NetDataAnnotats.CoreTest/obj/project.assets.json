@@ -4746,6 +4746,16 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
+      },
+      "NetDataAnnotations/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/NetDataAnnotations.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/NetDataAnnotations.dll": {}
+        }
       }
     }
   },
@@ -12525,12 +12535,18 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "NetDataAnnotations/1.0.0": {
+      "type": "project",
+      "path": "../NetDataAnnotations/NetDataAnnotations/NetDataAnnotations.csproj",
+      "msbuildProject": "../NetDataAnnotations/NetDataAnnotations/NetDataAnnotations.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "Microsoft.AspNetCore.All >= 2.0.3",
-      "Microsoft.NETCore.App >= 2.0.0"
+      "Microsoft.NETCore.App >= 2.0.0",
+      "NetDataAnnotations >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -12565,7 +12581,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\github\\MyNetDataAnnotations\\NetDataAnnotations\\NetDataAnnotations\\NetDataAnnotations\\NetDataAnnotations.csproj": {
+              "projectPath": "D:\\github\\MyNetDataAnnotations\\NetDataAnnotations\\NetDataAnnotations\\NetDataAnnotations\\NetDataAnnotations.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
