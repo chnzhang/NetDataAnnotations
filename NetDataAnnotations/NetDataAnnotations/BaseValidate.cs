@@ -12,7 +12,7 @@ namespace NetDataAnnotations
         /// </summary>
         public string Message { get; set; }
         /// <summary>
-        /// 验证规则
+        /// 分组规则
         /// </summary>
         public BaseModelType[] Groups { get; set; }
 
@@ -21,8 +21,8 @@ namespace NetDataAnnotations
         /// <summary>
         /// 验证分组
         /// </summary>
-        /// <param name="groups"></param>
-        /// <param name="model"></param>
+        /// <param name="groups">分组规则</param>
+        /// <param name="model">当前规则</param>
         /// <returns></returns>
         public bool IsValidate(BaseModelType[] groups, BaseModelType model)
         {
@@ -37,4 +37,4 @@ namespace NetDataAnnotations
         }
     }
 }
-}
+

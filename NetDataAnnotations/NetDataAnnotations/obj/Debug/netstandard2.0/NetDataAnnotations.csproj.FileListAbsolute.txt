@@ -4,3 +4,14 @@ D:\github\NetDataAnnotations\NetDataAnnotations\NetDataAnnotations\obj\Debug\net
 D:\github\NetDataAnnotations\NetDataAnnotations\NetDataAnnotations\obj\Debug\netstandard2.0\NetDataAnnotations.csproj.CoreCompileInputs.cache
 D:\github\NetDataAnnotations\NetDataAnnotations\NetDataAnnotations\obj\Debug\netstandard2.0\NetDataAnnotations.AssemblyInfoInputs.cache
 D:\github\NetDataAnnotations\NetDataAnnotations\NetDataAnnotations\obj\Debug\netstandard2.0\NetDataAnnotations.AssemblyInfo.cs
+D:\github\MyNetDataAnnotations\NetDataAnnotations\NetDataAnnotations\NetDataAnnotations\obj\Debug\netstandard2.0\NetDataAnnotations.csprojResolveAssemblyReference.cache
+D:\github\MyNetDataAnnotations\NetDataAnnotations\NetDataAnnotations\NetDataAnnotations\obj\Debug\netstandard2.0\NetDataAnnotations.csproj.CoreCompileInputs.cache
+D:\github\MyNetDataAnnotations\NetDataAnnotations\NetDataAnnotations\NetDataAnnotations\obj\Debug\netstandard2.0\NetDataAnnotations.AssemblyInfoInputs.cache
+D:\github\MyNetDataAnnotations\NetDataAnnotations\NetDataAnnotations\NetDataAnnotations\obj\Debug\netstandard2.0\NetDataAnnotations.AssemblyInfo.cs
+D:\github\MyNetDataAnnotations\NetDataAnnotations\NetDataAnnotations\NetDataAnnotations\bin\Debug\netstandard2.0\NetDataAnnotations.deps.json
+D:\github\MyNetDataAnnotations\NetDataAnnotations\NetDataAnnotations\NetDataAnnotations\bin\Debug\netstandard2.0\NetDataAnnotations.dll
+D:\github\MyNetDataAnnotations\NetDataAnnotations\NetDataAnnotations\NetDataAnnotations\bin\Debug\netstandard2.0\NetDataAnnotations.pdb
+D:\github\MyNetDataAnnotations\NetDataAnnotations\NetDataAnnotations\NetDataAnnotations\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.dll
+D:\github\MyNetDataAnnotations\NetDataAnnotations\NetDataAnnotations\NetDataAnnotations\bin\Debug\netstandard2.0\System.ComponentModel.Annotations.xml
+D:\github\MyNetDataAnnotations\NetDataAnnotations\NetDataAnnotations\NetDataAnnotations\obj\Debug\netstandard2.0\NetDataAnnotations.dll
+D:\github\MyNetDataAnnotations\NetDataAnnotations\NetDataAnnotations\NetDataAnnotations\obj\Debug\netstandard2.0\NetDataAnnotations.pdb
