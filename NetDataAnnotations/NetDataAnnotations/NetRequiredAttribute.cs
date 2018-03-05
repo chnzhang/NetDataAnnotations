@@ -5,22 +5,18 @@ using System.ComponentModel.DataAnnotations;
 
 namespace NetDataAnnotations
 {
-   public class NetRequiredAttribute: ValidationAttribute
+    public class NetRequiredAttribute : BaseValidate
     {
+        
         /// <summary>
-        /// 错误消息key
+        /// 验证数据
         /// </summary>
-        public string Message { get; set; }
-        /// <summary>
-        /// 验证规则
-        /// </summary>
-        public BaseModelType[] Groups { get; set; }
-
-
-
+        /// <param name="value"></param>
+        /// <param name="validationContext"></param>
+        /// <returns></returns>
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {
-
+            //数据及分组判断
             if (value == null && IsValidate(Groups, NetValidateAttribute.Model))
             {
                 string tips = Message;//Common.XMLConfiguartionService.GetXmlConfig(Message);
@@ -29,16 +25,5 @@ namespace NetDataAnnotations
             return ValidationResult.Success;
         }
 
-        public bool IsValidate(BaseModelType[] groups, BaseModelType model)
-        {
-            foreach (var item in groups)
-            {
-                if (item == model)
-                {
-                    return true;
-                }
-            }
-            return false;
-        }
     }
 }
