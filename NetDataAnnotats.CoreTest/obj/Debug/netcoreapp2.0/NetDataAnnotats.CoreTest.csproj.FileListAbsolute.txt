@@ -1,0 +1,4 @@
+D:\github\MyNetDataAnnotations\NetDataAnnotations\NetDataAnnotats.CoreTest\obj\Debug\netcoreapp2.0\NetDataAnnotats.CoreTest.csprojResolveAssemblyReference.cache
+D:\github\MyNetDataAnnotations\NetDataAnnotations\NetDataAnnotats.CoreTest\obj\Debug\netcoreapp2.0\NetDataAnnotats.CoreTest.csproj.CoreCompileInputs.cache
+D:\github\MyNetDataAnnotations\NetDataAnnotations\NetDataAnnotats.CoreTest\obj\Debug\netcoreapp2.0\NetDataAnnotats.CoreTest.AssemblyInfoInputs.cache
+D:\github\MyNetDataAnnotations\NetDataAnnotations\NetDataAnnotats.CoreTest\obj\Debug\netcoreapp2.0\NetDataAnnotats.CoreTest.AssemblyInfo.cs

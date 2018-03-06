@@ -13,7 +13,7 @@ namespace NetDataAnnotats.CoreTest.Model.Input
         [NetRequired(Message = "uservalidate:usernamempty", Groups = new[] { BaseModelType.Insert, BaseModelType.SelectOne })]
         public string UserName { get; set; }
 
-        [NetRequired(Message = "uservalidate:userphoneempty", Groups = new[] { BaseModelType.Insert, BaseModelType.SelectOne })]
+        [NetRequired(Message = "uservalidate:userphoneempty", Groups = new[] { BaseModelType.Insert, BaseModelType.Update })]
         public string UserPhone { get; set; }
     }
 }

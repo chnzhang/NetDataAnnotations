@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using NetDataAnnotats.CoreTest.Model.Input;
 using NetDataAnnotations;
+using static NetDataAnnotations.BaseModelType.BaseModelType;
 
 namespace NetDataAnnotats.CoreTest.Controllers
 {
@@ -50,9 +51,13 @@ namespace NetDataAnnotats.CoreTest.Controllers
         /// <param name="input"></param>
         /// <returns></returns>
         [HttpPost("postuser")]
-        [NetValidate(BaseModelType.Insert)]
+        [Insert]
         public bool PostUser(UserInput input)
         {
+            if (ModelState.IsValid)
+            {
+
+            }
             return false;
         }
     }
