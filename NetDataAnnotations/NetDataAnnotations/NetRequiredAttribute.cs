@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.Filters;
 namespace NetDataAnnotations
 {
 
-    public class MyRequiredAttribute : RequiredAttribute
+    public class NetRequiredAttribute : RequiredAttribute
     {
 
         /// <summary>

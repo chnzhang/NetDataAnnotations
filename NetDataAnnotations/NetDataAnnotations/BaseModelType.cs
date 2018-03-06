@@ -5,8 +5,7 @@ using System.Text;
 
 namespace NetDataAnnotations
 {
-    public class BaseModelType
-    {
+
         public class BaseModelType : Attribute
         {
             public class Insert : BaseModelType { };
@@ -16,6 +15,6 @@ namespace NetDataAnnotations
         }
 
 
-    }
+    
 }
 

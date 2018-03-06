@@ -10,10 +10,10 @@ namespace NetDataAnnotats.CoreTest.Model.Input
     {
         public int UserId { get; set; }
 
-        [NetRequired(Message = "uservalidate:usernamempty", Groups = new[] { BaseModelType.Insert, BaseModelType.SelectOne })]
+        [NetRequired(Message = "uservalidate:usernamempty", Groups = new[] {typeof( BaseModelType.Insert), typeof(BaseModelType.SelectOne) })]
         public string UserName { get; set; }
 
-        [NetRequired(Message = "uservalidate:userphoneempty", Groups = new[] { BaseModelType.Insert, BaseModelType.Update })]
+        [NetRequired(Message = "uservalidate:userphoneempty", Groups = new[] { typeof(BaseModelType.Insert), typeof(BaseModelType.Update) })]
         public string UserPhone { get; set; }
     }
 }
