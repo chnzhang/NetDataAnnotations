@@ -11,22 +11,22 @@
         /// <summary>
         /// 用户姓名
         /// </summary>
-        [MyRequired(Message = "uservalidate:username.required", Groups = new[] { typeof(BaseModelType.Insert), typeof(BaseModelType.SelectOne) })]
-        [MyStringLength(10, MinimumLength = 2, Message = "uservalidate:username.length", Groups = new[] { typeof(BaseModelType.Insert), typeof(BaseModelType.SelectOne) })]
+        [NetRequired(Message = "uservalidate:username.required", Groups = new[] { typeof(BaseModelType.Insert), typeof(BaseModelType.SelectOne) })]
+        [NetStringLength(10, MinimumLength = 2, Message = "uservalidate:username.length", Groups = new[] { typeof(BaseModelType.Insert), typeof(BaseModelType.SelectOne) })]
         public string UserName { get; set; }
 
         /// <summary>
         /// 用户电话号码
         /// </summary>
-        [MyRequired(Message = "uservalidate:userphone.required", Groups = new[] { typeof(BaseModelType.Insert), typeof(BaseModelType.Update) })]
-        [MyRegularExpression(@"^[1][0-9][0-9]{9}$", Message = "uservalidate:userphone.regex", Groups = new[] { typeof(BaseModelType.Insert), typeof(BaseModelType.Update) })]
+        [NetRequired(Message = "uservalidate:userphone.required", Groups = new[] { typeof(BaseModelType.Insert), typeof(BaseModelType.Update) })]
+        [NetRegularExpression(@"^[1][0-9][0-9]{9}$", Message = "uservalidate:userphone.regex", Groups = new[] { typeof(BaseModelType.Insert), typeof(BaseModelType.Update) })]
         public string UserPhone { get; set; }
 
         /// <summary>
         /// 身份证号码
         /// </summary>
-        [MyRequired(Message = "uservalidate:useridcard.required", Groups = new[] { typeof(BaseModelType.Insert), typeof(BaseModelType.Update) })]
-        [MyStringLength(18, MinimumLength = 15, Message = "uservalidate:useridcard.length",
+        [NetRequired(Message = "uservalidate:useridcard.required", Groups = new[] { typeof(BaseModelType.Insert), typeof(BaseModelType.Update) })]
+        [NetStringLength(18, MinimumLength = 15, Message = "uservalidate:useridcard.length",
                                         Groups = new[] { typeof(BaseModelType.Insert), typeof(BaseModelType.Update) })]
         public string UserIdCard { get; set; }
 
