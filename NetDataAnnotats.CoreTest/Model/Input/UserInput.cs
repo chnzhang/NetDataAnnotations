@@ -14,6 +14,7 @@ namespace NetDataAnnotats.CoreTest.Model.Input
         public string UserName { get; set; }
 
         [NetRequired(Message = "uservalidate:userphoneempty", Groups = new[] { typeof(BaseModelType.Insert), typeof(BaseModelType.Update) })]
+        [NetRegularExpression(@"^[1][0-9][0-9]{9}$", Message = "uservalidate:userphone.regex", Groups = new[] { typeof(BaseModelType.Insert), typeof(BaseModelType.Update) })]
         public string UserPhone { get; set; }
     }
 }
