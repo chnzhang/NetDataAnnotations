@@ -20,13 +20,17 @@ namespace NetDataAnnotations
         /// 错误消息key
         /// </summary>
         public string Message { get; set; }
+
+        /// <summary>
+        /// xml消息key
+        /// </summary>
+        public string MessageKey { get; set; }
+
         /// <summary>
         /// 验证规则
         /// </summary>
         public object[] Groups { get; set; }
-
-        // public int MinimumLength { get; set; }
-        //  public int MaximumLength { get; set; }
+      
 
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {
@@ -38,7 +42,15 @@ namespace NetDataAnnotations
                 {
                     if (value == null || Convert.ToString(value).Length < MinimumLength || Convert.ToString(value).Length > MaximumLength)
                     {
-                        string tips = XMLConfiguartionService.GetXmlConfig(Message);
+                        string tips = string.Empty;
+                        if (!string.IsNullOrEmpty(Message))
+                        {
+                            tips = Message;
+                        }
+                        else if (!string.IsNullOrEmpty(MessageKey))
+                        {
+                            tips=XMLConfiguartionService.GetXmlConfig(Message);
+                        }
                         return new ValidationResult(tips);
                     }
                 }

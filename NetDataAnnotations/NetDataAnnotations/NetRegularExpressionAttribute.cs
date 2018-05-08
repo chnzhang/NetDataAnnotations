@@ -16,12 +16,18 @@ namespace NetDataAnnotations
         /// 错误消息key
         /// </summary>
         public string Message { get; set; }
+
+        /// <summary>
+        /// xml消息key
+        /// </summary>
+        public string MessageKey { get; set; }
+
         /// <summary>
         /// 验证规则
         /// </summary>
         public object[] Groups { get; set; }
 
-
+     
         protected override ValidationResult IsValid(object value, ValidationContext validationContext)
         {
             if (validationContext.Items.Count > 0)
@@ -33,7 +39,15 @@ namespace NetDataAnnotations
                     Regex regex = new Regex(base.Pattern);
                     if (!regex.IsMatch(Convert.ToString(value)))
                     {
-                        string tips = XMLConfiguartionService.GetXmlConfig(Message);
+                        string tips = string.Empty;
+                        if (!string.IsNullOrEmpty(Message))
+                        {
+                            tips = Message;
+                        }
+                        else if (!string.IsNullOrEmpty(MessageKey))
+                        {
+                            tips=XMLConfiguartionService.GetXmlConfig(MessageKey);
+                        }
                         return new ValidationResult(tips);
                     }
                 }

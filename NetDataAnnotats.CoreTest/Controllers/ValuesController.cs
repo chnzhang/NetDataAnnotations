@@ -5,18 +5,21 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using NetDataAnnotats.CoreTest.Model.Input;
 using NetDataAnnotations;
-using static NetDataAnnotations.BaseModelType.BaseModelType;
+
+using static NetDataAnnotations.BaseModelType;
 
 namespace NetDataAnnotats.CoreTest.Controllers
 {
     [Route("api/values")]
     public class ValuesController : Controller
     {
+       
+
         // GET api/values
         [HttpGet]
-        public IEnumerable<string> Get()
+        public List<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            return new List<string>();
         }
 
         // GET api/values/5

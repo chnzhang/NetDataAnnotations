@@ -5,11 +5,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="DbContexts\IRepository\" />
+    <Folder Include="DbContexts\Repository\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
+    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.11" />
   </ItemGroup>
 
   <ItemGroup>

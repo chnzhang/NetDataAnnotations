@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using NetDataAnnotations;
 
 namespace NetDataAnnotats.CoreTest
 {
@@ -18,12 +19,16 @@ namespace NetDataAnnotats.CoreTest
             Configuration = configuration;
         }
 
-        public IConfiguration Configuration { get; }
+        public static IConfiguration Configuration { get; set; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
+            services.AddMvc(opt =>
+            {
+                opt.RespectBrowserAcceptHeader = true;             
+                opt.Filters.Add<GlobalActionFilterAttribute>();
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

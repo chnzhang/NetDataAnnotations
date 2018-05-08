@@ -2,3 +2,12 @@ D:\github\MyNetDataAnnotations\NetDataAnnotations\NetDataAnnotats.CoreTest\obj\D
 D:\github\MyNetDataAnnotations\NetDataAnnotations\NetDataAnnotats.CoreTest\obj\Debug\netcoreapp2.0\NetDataAnnotats.CoreTest.csproj.CoreCompileInputs.cache
 D:\github\MyNetDataAnnotations\NetDataAnnotations\NetDataAnnotats.CoreTest\obj\Debug\netcoreapp2.0\NetDataAnnotats.CoreTest.AssemblyInfoInputs.cache
 D:\github\MyNetDataAnnotations\NetDataAnnotations\NetDataAnnotats.CoreTest\obj\Debug\netcoreapp2.0\NetDataAnnotats.CoreTest.AssemblyInfo.cs
+D:\github\MyNetDataAnnotations\NetDataAnnotations\NetDataAnnotats.CoreTest\bin\Debug\netcoreapp2.0\NetDataAnnotats.CoreTest.deps.json
+D:\github\MyNetDataAnnotations\NetDataAnnotations\NetDataAnnotats.CoreTest\bin\Debug\netcoreapp2.0\NetDataAnnotats.CoreTest.runtimeconfig.json
+D:\github\MyNetDataAnnotations\NetDataAnnotations\NetDataAnnotats.CoreTest\bin\Debug\netcoreapp2.0\NetDataAnnotats.CoreTest.runtimeconfig.dev.json
+D:\github\MyNetDataAnnotations\NetDataAnnotations\NetDataAnnotats.CoreTest\bin\Debug\netcoreapp2.0\NetDataAnnotats.CoreTest.dll
+D:\github\MyNetDataAnnotations\NetDataAnnotations\NetDataAnnotats.CoreTest\bin\Debug\netcoreapp2.0\NetDataAnnotations.dll
+D:\github\MyNetDataAnnotations\NetDataAnnotations\NetDataAnnotats.CoreTest\bin\Debug\netcoreapp2.0\NetDataAnnotations.pdb
+D:\github\MyNetDataAnnotations\NetDataAnnotations\NetDataAnnotats.CoreTest\bin\Debug\netcoreapp2.0\NetDataAnnotats.CoreTest.pdb
+D:\github\MyNetDataAnnotations\NetDataAnnotations\NetDataAnnotats.CoreTest\obj\Debug\netcoreapp2.0\NetDataAnnotats.CoreTest.dll
+D:\github\MyNetDataAnnotations\NetDataAnnotations\NetDataAnnotats.CoreTest\obj\Debug\netcoreapp2.0\NetDataAnnotats.CoreTest.pdb

@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.ComponentModel.DataAnnotations;
-using Microsoft.AspNetCore.Mvc.Filters;
+﻿using System.ComponentModel.DataAnnotations;
+
 
 namespace NetDataAnnotations
 {
@@ -11,9 +8,15 @@ namespace NetDataAnnotations
     {
 
         /// <summary>
-        /// 错误消息key
+        ///错误消息
         /// </summary>
         public string Message { get; set; }
+
+        /// <summary>
+        /// xml消息key
+        /// </summary>
+        public string MessageKey { get; set; }
+
         /// <summary>
         /// 验证规则
         /// </summary>
@@ -30,7 +33,15 @@ namespace NetDataAnnotations
                 {
                     if (value == null)
                     {
-                        string tips = XMLConfiguartionService.GetXmlConfig(Message);
+                        string tips = string.Empty;
+                        if (!string.IsNullOrEmpty(Message))
+                        {
+                            tips = Message;
+                        }
+                        else if (!string.IsNullOrEmpty(MessageKey))
+                        {
+                            tips = XMLConfiguartionService.GetXmlConfig(MessageKey);
+                        }                        
                         return new ValidationResult(tips);
                     }
                 }

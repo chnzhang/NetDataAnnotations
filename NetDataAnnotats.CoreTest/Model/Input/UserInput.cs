@@ -1,20 +1,35 @@
 ﻿using NetDataAnnotations;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace NetDataAnnotats.CoreTest.Model.Input
 {
-    public class UserInput
+    public class UserInput : BaseValidate
     {
         public int UserId { get; set; }
 
-        [NetRequired(Message = "uservalidate:usernamempty", Groups = new[] {typeof( BaseModelType.Insert), typeof(BaseModelType.SelectOne) })]
+        /// <summary>
+        /// 使用message文件配置消息 key 支持分组规则校验,及一级子类传递
+        /// </summary>
+        [NetRequired(MessageKey = "uservalidate:usernamempty", Groups = new[] { typeof(BaseModelType.Insert), typeof(BaseModelType.SelectOne) })]
         public string UserName { get; set; }
 
-        [NetRequired(Message = "uservalidate:userphoneempty", Groups = new[] { typeof(BaseModelType.Insert), typeof(BaseModelType.Update) })]
-        [NetRegularExpression(@"^[1][0-9][0-9]{9}$", Message = "uservalidate:userphone.regex", Groups = new[] { typeof(BaseModelType.Insert), typeof(BaseModelType.Update) })]
+        /// <summary>
+        /// 使用消息 uservalidate:userphoneempty
+        /// </summary>
+        [NetRequired(Message = "电话号码不能为空", Groups = new[] { typeof(BaseModelType.Insert), typeof(BaseModelType.Update) })]
+        [NetRegularExpression(@"^[1][0-9][0-9]{9}$", MessageKey = "uservalidate:userphone.regex", Groups = new[] { typeof(BaseModelType.Insert), typeof(BaseModelType.Update) })]
         public string UserPhone { get; set; }
+
+        /// <summary>
+        /// 链表实体验证
+        /// </summary>
+        [BaseModelType.Validate]
+        public Order order { get; set; }
+
+        /// <summary>
+        /// List链表实体验证
+        /// </summary>
+        [BaseModelType.Validate]
+        public List<Order> orderList { get; set; }
     }
 }
