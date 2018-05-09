@@ -34,15 +34,18 @@
 可分组验证不同属性规则Groups
 
 使用方式：
-[HttpPost]
-[Insert]//设置验证规则group
-public bool PostUser(UserInput input)
-{           
-            return false;
-}
+
+    [HttpPost]
+    [Insert]//设置验证规则group
+    public bool PostUser(UserInput input)
+    {           
+                return false;
+    }
 返回结果：
-{
-    "code": 400,
-    "data": "",
-    "msg": "电话号码不能为空"
-}
+
+    
+    {
+        "code": 400,
+        "data": "",
+        "msg": "电话号码不能为空"
+    }
