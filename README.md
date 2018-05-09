@@ -34,6 +34,15 @@
 可分组验证不同属性规则Groups
 
 使用方式：
+Startup设置
+
+    public void ConfigureServices(IServiceCollection services)
+    {
+        services.AddMvc(opt =>
+        {
+            opt.Filters.Add<GlobalActionFilterAttribute>();
+        });
+    }
 
     [HttpPost]
     [Insert]//设置验证规则group
@@ -41,6 +50,7 @@
     {           
                 return false;
     }
+    
 返回结果：
 
     
