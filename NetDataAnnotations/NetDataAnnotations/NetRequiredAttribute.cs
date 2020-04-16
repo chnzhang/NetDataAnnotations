@@ -29,11 +29,15 @@ namespace NetDataAnnotations
             {
                 var Model = validationContext.Items["Model"];
 
-                if (IsValidate(Groups, Model))
+                if (ValidateTypeHander.IsValidate(Groups, Model))
                 {
-                    if (value == null)
+                    if (value == null|| System.Convert.ToString(value).Equals(""))
                     {
                         string tips = string.Empty;
+                        if(!string.IsNullOrEmpty(ErrorMessage))
+                        {
+                            Message = ErrorMessage;
+                        }
                         if (!string.IsNullOrEmpty(Message))
                         {
                             tips = Message;
@@ -49,18 +53,7 @@ namespace NetDataAnnotations
             return ValidationResult.Success;
         }
 
-        public bool IsValidate(object[] groups, object model)
-        {
-
-            foreach (var item in groups)
-            {
-                if (item == model)
-                {
-                    return true;
-                }
-            }
-            return false;
-        }
+     
 
     }
 

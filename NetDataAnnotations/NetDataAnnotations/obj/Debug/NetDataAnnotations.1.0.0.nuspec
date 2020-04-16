@@ -9,14 +9,14 @@
     <description>Package Description</description>
     <dependencies>
       <group targetFramework=".NETStandard2.0">
-        <dependency id="System.ComponentModel.Annotations" version="4.4.1" exclude="Build,Analyzers" />
-        <dependency id="Microsoft.Extensions.Configuration" version="2.0.0" exclude="Build,Analyzers" />
         <dependency id="Microsoft.AspNetCore.Mvc.Core" version="2.0.4" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration" version="2.0.0" exclude="Build,Analyzers" />
         <dependency id="Microsoft.Extensions.Configuration.Xml" version="2.0.0" exclude="Build,Analyzers" />
+        <dependency id="System.ComponentModel.Annotations" version="4.7.0" exclude="Build,Analyzers" />
       </group>
     </dependencies>
   </metadata>
   <files>
-    <file src="D:\github\MyNetDataAnnotations\NetDataAnnotations\NetDataAnnotations\NetDataAnnotations\bin\Debug\netstandard2.0\NetDataAnnotations.dll" target="lib\netstandard2.0\NetDataAnnotations.dll" />
+    <file src="D:\GitHub\NetDataAnnotations\NetDataAnnotations\NetDataAnnotations\bin\Debug\netstandard2.0\NetDataAnnotations.dll" target="lib\netstandard2.0\NetDataAnnotations.dll" />
   </files>
 </package>

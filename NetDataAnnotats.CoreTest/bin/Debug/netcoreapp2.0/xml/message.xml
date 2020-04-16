@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<result>  
+  <uservalidate>
+    <usernamempty>用户名不能为空</usernamempty>
+    <userphoneempty>电话号码不能为空</userphoneempty>
+    <userphone.regex>请输入正确的电话号码</userphone.regex>
+  </uservalidate>
+</result>

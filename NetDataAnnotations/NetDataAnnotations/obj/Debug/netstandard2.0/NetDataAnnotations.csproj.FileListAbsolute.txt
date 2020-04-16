@@ -1,6 +1,5 @@
 D:\github\NetDataAnnotations\NetDataAnnotations\NetDataAnnotations\bin\Debug\netstandard2.0\NetDataAnnotations.deps.json
 D:\github\NetDataAnnotations\NetDataAnnotations\NetDataAnnotations\bin\Debug\netstandard2.0\NetDataAnnotations.dll
-D:\github\NetDataAnnotations\NetDataAnnotations\NetDataAnnotations\obj\Debug\netstandard2.0\NetDataAnnotations.csprojResolveAssemblyReference.cache
 D:\github\NetDataAnnotations\NetDataAnnotations\NetDataAnnotations\obj\Debug\netstandard2.0\NetDataAnnotations.csproj.CoreCompileInputs.cache
 D:\github\NetDataAnnotations\NetDataAnnotations\NetDataAnnotations\obj\Debug\netstandard2.0\NetDataAnnotations.AssemblyInfoInputs.cache
 D:\github\NetDataAnnotations\NetDataAnnotations\NetDataAnnotations\obj\Debug\netstandard2.0\NetDataAnnotations.AssemblyInfo.cs
@@ -13,3 +12,7 @@ D:\github\MyNetDataAnnotations\NetDataAnnotations\NetDataAnnotations\NetDataAnno
 D:\github\MyNetDataAnnotations\NetDataAnnotations\NetDataAnnotations\NetDataAnnotations\bin\Debug\netstandard2.0\NetDataAnnotations.pdb
 D:\github\MyNetDataAnnotations\NetDataAnnotations\NetDataAnnotations\NetDataAnnotations\obj\Debug\netstandard2.0\NetDataAnnotations.dll
 D:\github\MyNetDataAnnotations\NetDataAnnotations\NetDataAnnotations\NetDataAnnotations\obj\Debug\netstandard2.0\NetDataAnnotations.pdb
+D:\GitHub\NetDataAnnotations\NetDataAnnotations\NetDataAnnotations\bin\Debug\netstandard2.0\NetDataAnnotations.pdb
+D:\GitHub\NetDataAnnotations\NetDataAnnotations\NetDataAnnotations\obj\Debug\netstandard2.0\NetDataAnnotations.csprojAssemblyReference.cache
+D:\GitHub\NetDataAnnotations\NetDataAnnotations\NetDataAnnotations\obj\Debug\netstandard2.0\NetDataAnnotations.dll
+D:\GitHub\NetDataAnnotations\NetDataAnnotations\NetDataAnnotations\obj\Debug\netstandard2.0\NetDataAnnotations.pdb

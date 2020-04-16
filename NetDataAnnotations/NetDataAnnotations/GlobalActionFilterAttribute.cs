@@ -30,10 +30,10 @@ namespace NetDataAnnotations
                 {
 
                     //组装当前使用的验证模式
-                    IDictionary<object, object> dic = new Dictionary<object, object>
-                    {
-                        { "Model", myType.AttributeType }
-                    };
+                    //IDictionary<object, object> dic = new Dictionary<object, object>
+                    //{
+                    //    { "Model", myType.AttributeType }
+                    //};
 
                     //组装验证类，并触发模型验证
                     if (!actionContext.ActionArguments.Any())
@@ -48,7 +48,8 @@ namespace NetDataAnnotations
                     }
                     object objClass = actionContext.ActionArguments.FirstOrDefault().Value;
                     //触发验证
-                    ValidationContext context = new ValidationContext(objClass, dic);
+                    ValidationContext context = new ValidationContext(objClass);
+                    context.Items.Add("Model", myType.AttributeType);
                     List<ValidationResult> results = new List<ValidationResult>();
 
                     bool isValid = Validator.TryValidateObject(objClass, context, results, true);
@@ -92,7 +93,7 @@ namespace NetDataAnnotations
                                     var model = item.Module.Assembly.CreateInstance(name);
 
                                     //普通对象验证                             
-                                    var validateResult = ValidateData(objClass, model, dic);
+                                    var validateResult = ValidateData(objClass, model, context.Items);
                                     if (validateResult.Item1 == false)
                                     {
                                         isValid = validateResult.Item1;
@@ -105,7 +106,7 @@ namespace NetDataAnnotations
                                     foreach (var ch in list)
                                     {
                                         //普通对象验证                             
-                                        var validateResult = ValidateData(objClass, ch, dic);
+                                        var validateResult = ValidateData(objClass, ch, context.Items);
                                         if (validateResult.Item1 == false)
                                         {
                                             isValid = validateResult.Item1;
@@ -118,7 +119,7 @@ namespace NetDataAnnotations
                             else if (item.PropertyType.BaseType == typeof(BaseValidate))
                             {
                                 //验证子类普通对象                              
-                                var validateResult = ValidateData(objClass, item, dic);
+                                var validateResult = ValidateData(objClass, item, context.Items);
                                 if (validateResult.Item1 == false)
                                 {
                                     isValid = validateResult.Item1;

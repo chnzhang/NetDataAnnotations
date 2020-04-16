@@ -9,7 +9,8 @@ namespace NetDataAnnotations
 {
     public class XMLConfiguartionService
     {
-
+        public static string configFileName = "xml/message.xml";
+        public static IConfigurationRoot config;
         public XMLConfiguartionService()
         {
 
@@ -21,16 +22,24 @@ namespace NetDataAnnotations
         /// <param name="configFileName"></param>
         /// <param name="basePath"></param>
         /// <returns></returns>
-        public static string GetXmlConfig(string key, string configFileName = "XMLConfig/message.xml", string basePath = "")
+        public static string GetXmlConfig(string key)
         {
-            basePath = string.IsNullOrWhiteSpace(basePath) ? Directory.GetCurrentDirectory() : basePath;
-            var builder = new ConfigurationBuilder().         
-             AddXmlFile(b =>
-             {
-                 b.Path = configFileName;
-                 b.FileProvider = new PhysicalFileProvider(basePath);
-             });
-            var config = builder.Build();
+            if (config == null)
+            {
+                string basePath = Directory.GetCurrentDirectory();
+                if (!File.Exists(basePath + "\\" + configFileName))
+                {
+                    return "未找到消息xml";
+                }
+
+                var builder = new ConfigurationBuilder().
+                 AddXmlFile(b =>
+                 {
+                     b.Path = configFileName;
+                     b.FileProvider = new PhysicalFileProvider(basePath);
+                 });
+                config = builder.Build();
+            }
 
             return config[key];
         }
