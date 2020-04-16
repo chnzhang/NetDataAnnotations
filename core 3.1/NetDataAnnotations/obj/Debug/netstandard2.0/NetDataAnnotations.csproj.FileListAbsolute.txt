@@ -1,0 +1,8 @@
+D:\GitHub\WebSystemManage\src\webapi\NetDataAnnotations\obj\Debug\netstandard2.0\NetDataAnnotations.csprojAssemblyReference.cache
+D:\GitHub\WebSystemManage\src\webapi\NetDataAnnotations\obj\Debug\netstandard2.0\NetDataAnnotations.AssemblyInfoInputs.cache
+D:\GitHub\WebSystemManage\src\webapi\NetDataAnnotations\obj\Debug\netstandard2.0\NetDataAnnotations.AssemblyInfo.cs
+D:\GitHub\WebSystemManage\src\webapi\NetDataAnnotations\bin\Debug\netstandard2.0\NetDataAnnotations.deps.json
+D:\GitHub\WebSystemManage\src\webapi\NetDataAnnotations\bin\Debug\netstandard2.0\NetDataAnnotations.dll
+D:\GitHub\WebSystemManage\src\webapi\NetDataAnnotations\bin\Debug\netstandard2.0\NetDataAnnotations.pdb
+D:\GitHub\WebSystemManage\src\webapi\NetDataAnnotations\obj\Debug\netstandard2.0\NetDataAnnotations.dll
+D:\GitHub\WebSystemManage\src\webapi\NetDataAnnotations\obj\Debug\netstandard2.0\NetDataAnnotations.pdb
