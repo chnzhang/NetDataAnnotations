@@ -3,6 +3,12 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.2</Version>
+    <Authors>cnzhang</Authors>
+    <Description>适用于.net core 2.0-2.2</Description>
+    <Copyright>cnzhang</Copyright>
+    <PackageLicenseUrl>MIT</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/chnzhang/NetDataAnnotations</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>

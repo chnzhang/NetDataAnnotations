@@ -1,13 +1,13 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": ""
+    "signature": "583c7829bdccfe7ea07b84bd8c55f3fc23f5d769"
   },
   "compilationOptions": {},
   "targets": {
     ".NETStandard,Version=v2.0": {},
     ".NETStandard,Version=v2.0/": {
-      "NetDataAnnotations/1.0.0": {
+      "NetDataAnnotations/3.0.1": {
         "dependencies": {
           "Microsoft.AspNetCore.Mvc": "2.2.0",
           "Microsoft.Extensions.Configuration.Xml": "5.0.0-preview.2.20160.3",
@@ -1871,7 +1871,7 @@
     }
   },
   "libraries": {
-    "NetDataAnnotations/1.0.0": {
+    "NetDataAnnotations/3.0.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

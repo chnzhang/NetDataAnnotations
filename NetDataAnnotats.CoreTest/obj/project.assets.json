@@ -4826,7 +4826,7 @@
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
       },
-      "NetDataAnnotations/1.0.0": {
+      "NetDataAnnotations/1.0.2": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
@@ -12788,7 +12788,7 @@
         "windowsazure.storage.nuspec"
       ]
     },
-    "NetDataAnnotations/1.0.0": {
+    "NetDataAnnotations/1.0.2": {
       "type": "project",
       "path": "../NetDataAnnotations/NetDataAnnotations/NetDataAnnotations.csproj",
       "msbuildProject": "../NetDataAnnotations/NetDataAnnotations/NetDataAnnotations.csproj"
@@ -12799,7 +12799,7 @@
       "Microsoft.AspNetCore.All >= 2.0.3",
       "Microsoft.NETCore.App >= 2.0.0",
       "MySql.Data.EntityFrameworkCore >= 8.0.11",
-      "NetDataAnnotations >= 1.0.0"
+      "NetDataAnnotations >= 1.0.2"
     ]
   },
   "packageFolders": {

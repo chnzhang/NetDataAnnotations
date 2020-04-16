@@ -7,7 +7,7 @@
   "targets": {
     ".NETStandard,Version=v2.0": {},
     ".NETStandard,Version=v2.0/": {
-      "NetDataAnnotations/1.0.0": {
+      "NetDataAnnotations/1.0.2": {
         "dependencies": {
           "Microsoft.AspNetCore.Mvc.Core": "2.0.4",
           "Microsoft.Extensions.Configuration": "2.0.0",
@@ -952,7 +952,7 @@
     }
   },
   "libraries": {
-    "NetDataAnnotations/1.0.0": {
+    "NetDataAnnotations/1.0.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

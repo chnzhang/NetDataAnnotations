@@ -13,6 +13,5 @@ D:\github\MyNetDataAnnotations\NetDataAnnotations\NetDataAnnotations\NetDataAnno
 D:\github\MyNetDataAnnotations\NetDataAnnotations\NetDataAnnotations\NetDataAnnotations\obj\Debug\netstandard2.0\NetDataAnnotations.dll
 D:\github\MyNetDataAnnotations\NetDataAnnotations\NetDataAnnotations\NetDataAnnotations\obj\Debug\netstandard2.0\NetDataAnnotations.pdb
 D:\GitHub\NetDataAnnotations\NetDataAnnotations\NetDataAnnotations\bin\Debug\netstandard2.0\NetDataAnnotations.pdb
-D:\GitHub\NetDataAnnotations\NetDataAnnotations\NetDataAnnotations\obj\Debug\netstandard2.0\NetDataAnnotations.csprojAssemblyReference.cache
 D:\GitHub\NetDataAnnotations\NetDataAnnotations\NetDataAnnotations\obj\Debug\netstandard2.0\NetDataAnnotations.dll
 D:\GitHub\NetDataAnnotations\NetDataAnnotations\NetDataAnnotations\obj\Debug\netstandard2.0\NetDataAnnotations.pdb

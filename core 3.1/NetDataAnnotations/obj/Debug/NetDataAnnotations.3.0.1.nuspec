@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>NetDataAnnotations</id>
+    <version>3.0.1</version>
+    <authors>cnzhang</authors>
+    <owners>cnzhang</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/chnzhang/NetDataAnnotations</projectUrl>
+    <description>适用于.net core 3.0以上</description>
+    <releaseNotes>适用于.net core 3.0以上</releaseNotes>
+    <copyright>cnzhang</copyright>
+    <repository url="https://github.com/chnzhang/NetDataAnnotations" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Microsoft.AspNetCore.Mvc" version="2.2.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Xml" version="5.0.0-preview.2.20160.3" exclude="Build,Analyzers" />
+        <dependency id="System.ComponentModel.Annotations" version="4.6.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\GitHub\NetDataAnnotations\core 3.1\NetDataAnnotations\bin\Debug\netstandard2.0\NetDataAnnotations.dll" target="lib\netstandard2.0\NetDataAnnotations.dll" />
+  </files>
+</package>

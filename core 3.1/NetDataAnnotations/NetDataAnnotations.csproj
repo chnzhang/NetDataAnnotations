@@ -2,6 +2,17 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>3.0.1</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>cnzhang</Authors>
+    <Description>适用于.net core 3.0以上</Description>
+    <PackageLicenseUrl>MIT</PackageLicenseUrl>
+    <Copyright>cnzhang</Copyright>
+    <PackageProjectUrl>https://github.com/chnzhang/NetDataAnnotations</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/chnzhang/NetDataAnnotations</RepositoryUrl>
+    <PackageReleaseNotes>适用于.net core 3.0以上</PackageReleaseNotes>
+    <AssemblyVersion>3.0.0.1</AssemblyVersion>
+    <FileVersion>3.0.0.1</FileVersion>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />    
